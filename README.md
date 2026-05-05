@@ -1,2 +1,2 @@
-# vitapet
+# Vitapet
 VitaPet
