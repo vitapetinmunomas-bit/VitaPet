@@ -1,0 +1,287 @@
+/* Paleta de colores */
+:root {
+    --dark-green: #1C2B1F;
+    --natural-green: #4CAF50;
+    --soft-gold: #D4AF37;
+    --warm-beige: #F2EFE6;
+    --white: #FFFFFF;
+}
+
+/* Tipografía */
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--dark-green);
+    margin: 0;
+}
+
+/* Estilos generales */
+.container {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+    color: var(--dark-green);
+}
+
+.btn-cta, .btn-cta-nav {
+    display: inline-block;
+    background-color: var(--natural-green);
+    color: var(--white);
+    padding: 15px 30px;
+    border-radius: 5px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.btn-cta:hover, .btn-cta-nav:hover {
+    background-color: var(--dark-green);
+}
+
+/* Encabezado */
+header {
+    background-color: var(--white);
+    padding: 20px 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+header nav ul {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    margin-left: 20px;
+}
+
+header nav ul li {
+    display: inline-block;
+}
+
+header nav ul li a {
+    display: block;
+    padding: 0 10px;
+    color: var(--dark-green);
+}
+
+header .btn-cta-nav {
+    float: right;
+    margin-top: -10px;
+}
+
+/* Hero */
+.hero {
+    background-color: var(--dark-green);
+    color: var(--white);
+    padding: 100px 0;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 36px;
+    margin-top: 0;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+/* Beneficios */
+.beneficios {
+    background-color: var(--white);
+    padding: 50px 0;
+}
+
+.beneficios h2 {
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.beneficios .card-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+}
+
+.beneficios .card {
+    background-color: var(--warm-beige);
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.beneficios .card img {
+    margin-bottom: 10px;
+}
+
+.beneficios .card h3 {
+    font-size: 18px;
+    margin-top: 0;
+}
+
+.beneficios .card p {
+    font-size: 16px;
+}
+
+/* Ciencia */
+.ciencia {
+    background-color: var(--warm-beige);
+    padding: 50px 0;
+}
+
+.ciencia h2 {
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.ciencia .mushrooms {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.ciencia .mushrooms img {
+    margin: 0 10px;
+}
+
+/* Producto */
+.producto {
+    background-color: var(--white);
+    padding: 50px 0;
+}
+
+.producto h2 {
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.producto .product-showcase {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.producto .product-showcase img {
+    margin-right: 20px;
+}
+
+.producto .ingredients {
+    width: 300px;
+}
+
+.producto .ingredients h3 {
+    font-size: 18px;
+    margin-top: 0;
+}
+
+.producto .ingredients ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.producto .ingredients ul li {
+    margin-bottom: 10px;
+}
+
+/* Emocional */
+.emocional {
+    background-color: var(--warm-beige);
+    padding: 50px 0;
+    text-align: center;
+}
+
+.emocional h2 {
+    font-size: 32px;
+    margin-top: 0;
+}
+
+/* Confianza */
+.confianza {
+    background-color: var(--white);
+    padding: 50px 0;
+}
+
+.confianza h2 {
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.confianza .reviews {
+    margin-top: 30px;
+}
+
+.confianza .reviews blockquote {
+    background-color: var(--warm-beige);
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.confianza .reviews cite {
+    font-style: italic;
+    color: var(--dark-green);
+}
+
+/* CTA Final */
+.cta-final {
+    background-color: var(--dark-green);
+    color: var(--white);
+    padding: 50px 0;
+    text-align: center;
+}
+
+.cta-final h2 {
+    font-size: 32px;
+    margin-top: 0;
+}
+
+/* Pie de página */
+footer {
+    background-color: var(--white);
+    padding: 20px 0;
+    font-size: 14px;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer ul {
+    float: right;
+    margin: 0;
+    padding: 0;
+}
+
+footer ul li {
+    display: inline-block;
+}
+
+footer ul li a {
+    display: block;
+    padding: 0 10px;
+    color: var(--dark-green);
+}
