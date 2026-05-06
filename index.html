@@ -3,215 +3,211 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>VitaPet | Protección Inmunológica para Mascotas</title>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<title>VitaPet | Inmunidad Premium</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 
 <style>
-*{margin:0;padding:0;box-sizing:border-box}
 body{
-  font-family:'Poppins',sans-serif;
-  background:#0f2f2c;
-  color:#f5f5f5;
-  overflow-x:hidden;
+margin:0;
+font-family:'Inter',sans-serif;
+background:#0f2f2c;
+color:#f5f5f5;
+scroll-behavior:smooth;
 }
 
 h1,h2,h3{
-  font-family:'Playfair Display',serif;
-}
-
-.section{
-  padding:100px 20px;
-  text-align:center;
+font-family:'Playfair Display',serif;
 }
 
 .hero{
-  height:100vh;
-  background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.7)),
-  url('https://images.unsplash.com/photo-1583511655857-d19b40a7a54e');
-  background-size:cover;
-  background-position:center;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  text-align:center;
+height:100vh;
+background:
+linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.7)),
+url('https://images.unsplash.com/photo-1558788353-f76d92427f16?q=80&w=1974');
+background-size:cover;
+background-position:center;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+padding:20px;
 }
 
 .hero h1{
-  font-size:48px;
-  margin-bottom:20px;
+font-size:52px;
+margin-bottom:20px;
 }
 
 .hero p{
-  max-width:600px;
-  margin:auto;
-  font-size:18px;
+max-width:600px;
+margin:auto;
 }
 
 .btn{
-  margin-top:30px;
-  padding:15px 35px;
-  border:none;
-  border-radius:40px;
-  background:#d4af37;
-  color:#0f2f2c;
-  font-weight:600;
-  cursor:pointer;
-  transition:0.3s;
+background:#d4af37;
+border:none;
+padding:16px 35px;
+border-radius:40px;
+cursor:pointer;
+margin-top:25px;
+font-weight:600;
+transition:0.3s;
 }
 
 .btn:hover{
-  transform:scale(1.05);
+transform:scale(1.08);
 }
 
-.cards{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-  gap:30px;
-  margin-top:50px;
+.section{
+padding:90px 20px;
+text-align:center;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+margin-top:40px;
 }
 
 .card{
-  background:#143d3a;
-  padding:30px;
-  border-radius:20px;
-  transition:0.4s;
+background:#143d3a;
+padding:30px;
+border-radius:20px;
+transition:0.4s;
 }
 
 .card:hover{
-  transform:translateY(-10px);
+transform:translateY(-10px);
 }
 
 .split{
-  display:flex;
-  flex-wrap:wrap;
-  align-items:center;
-  gap:40px;
+display:flex;
+flex-wrap:wrap;
+align-items:center;
+gap:40px;
 }
 
 .split img{
-  width:100%;
-  max-width:500px;
-  border-radius:20px;
-}
-
-.split div{
-  flex:1;
-}
-
-.testimonials{
-  display:flex;
-  gap:20px;
-  overflow-x:auto;
-}
-
-.testimonial{
-  background:#143d3a;
-  padding:20px;
-  border-radius:15px;
-  min-width:250px;
-}
-
-.product{
-  text-align:center;
+width:100%;
+max-width:500px;
+border-radius:20px;
 }
 
 .product img{
-  width:300px;
-  margin:30px auto;
-}
-
-footer{
-  background:#0a1f1d;
-  padding:40px;
-  text-align:center;
+width:280px;
+margin:30px auto;
+border-radius:15px;
 }
 
 .fade{
-  opacity:0;
-  transform:translateY(40px);
-  transition:1s;
+opacity:0;
+transform:translateY(40px);
+transition:1s;
 }
 
-.fade.visible{
-  opacity:1;
-  transform:translateY(0);
+.visible{
+opacity:1;
+transform:translateY(0);
 }
 
+footer{
+background:#0a1f1d;
+padding:40px;
+text-align:center;
+}
 </style>
 </head>
 
 <body>
 
 <section class="hero">
-  <div>
-    <h1>Protege su vida desde adentro</h1>
-    <p>Sistema inmunológico avanzado para mascotas basado en ciencia natural</p>
-    <button class="btn">Descubrir VitaPet</button>
-  </div>
+<div>
+<h1>Protege su vida desde adentro</h1>
+<p>Suplemento inmunológico liofilizado con alta concentración de beta-glucanos para mascotas</p>
+
+<a href="https://mpago.la/TU-LINK" target="_blank">
+<button class="btn">Comprar ahora</button>
+</a>
+
+<p>✔ Pago seguro | ✔ Envíos a todo Chile</p>
+</div>
 </section>
 
 <section class="section fade">
-  <h2>Confianza Científica</h2>
-  <div class="cards">
-    <div class="card">🧪 Beta-glucanos activos</div>
-    <div class="card">🌿 Extractos premium</div>
-    <div class="card">🐾 Seguro uso diario</div>
-  </div>
+<h2>Fórmula Científica Premium</h2>
+<p>Máxima concentración de beta-glucanos activos.<br>Liofilización avanzada para preservar nutrientes.</p>
+
+<div class="grid">
+<div class="card"><b>Reishi</b><br>Potente modulador del sistema inmune</div>
+<div class="card"><b>Melena de León</b><br>Apoyo neurológico y bienestar</div>
+<div class="card"><b>Cordyceps</b><br>Energía y vitalidad</div>
+<div class="card"><b>Chaga</b><br>Alto poder antioxidante</div>
+</div>
 </section>
 
 <section class="section split fade">
-  <img src="https://images.unsplash.com/photo-1601758003122-68ec4a7b7a00">
-  <div>
-    <h2>No es solo una mascota… es familia</h2>
-    <p>Su bienestar depende de las decisiones que tomas hoy</p>
-  </div>
+<img src="https://images.unsplash.com/photo-1601758003122-68ec4a7b7a00?q=80&w=1974">
+<div>
+<h2>No es solo una mascota… es familia</h2>
+<p>Y su bienestar depende de lo que haces hoy.</p>
+</div>
 </section>
 
 <section class="section fade">
-  <h2>Beneficios</h2>
-  <div class="cards">
-    <div class="card">Más energía</div>
-    <div class="card">Mejor defensa</div>
-    <div class="card">Menos enfermedades</div>
-    <div class="card">Mayor longevidad</div>
-  </div>
-</section>
-
-<section class="section fade">
-  <h2>Testimonios</h2>
-  <div class="testimonials">
-    <div class="testimonial">"Mi perro volvió a jugar como antes"</div>
-    <div class="testimonial">"Se nota su energía"</div>
-    <div class="testimonial">"Producto increíble"</div>
-  </div>
+<h2>Beneficios</h2>
+<div class="grid">
+<div class="card">Más energía</div>
+<div class="card">Defensas fortalecidas</div>
+<div class="card">Menos enfermedades</div>
+<div class="card">Mayor longevidad</div>
+</div>
 </section>
 
 <section class="section product fade">
-  <h2>VitaPet</h2>
-  <img src="https://images.unsplash.com/photo-1612538498456-e861df91d4d0">
-  <p>Suplemento inmunológico premium</p>
-  <button class="btn">Comprar ahora</button>
+<h2>VitaPet 60g</h2>
+
+<img src="https://images.unsplash.com/photo-1612538498456-e861df91d4d0?q=80&w=1974">
+
+<p>Suplemento en polvo premium<br>60 gramos<br>Liofilizado para máxima biodisponibilidad</p>
+
+<a href="https://mpago.la/TU-LINK" target="_blank">
+<button class="btn">Comprar ahora</button>
+</a>
 </section>
 
 <section class="section fade">
-  <h2>Dale más años de vida a quien te da todo</h2>
-  <button class="btn">Proteger a mi mascota</button>
+<h2>Testimonios</h2>
+<div class="grid">
+<div class="card">“Mi perro recuperó su energía en semanas”</div>
+<div class="card">“Se nota el cambio en su vitalidad”</div>
+<div class="card">“Producto realmente premium”</div>
+</div>
+</section>
+
+<section class="section fade">
+<h2>Dale más años de vida a quien te ama</h2>
+
+<a href="https://mpago.la/TU-LINK" target="_blank">
+<button class="btn">Proteger a mi mascota</button>
+</a>
 </section>
 
 <footer>
-  <p>contacto@vitapet.cl</p>
-  <p>© 2026 VitaPet</p>
+<p>Contacto: vitapetinmunomas@gmail.com</p>
+<p>© VitaPet 2026</p>
 </footer>
 
 <script>
 const faders=document.querySelectorAll('.fade');
 window.addEventListener('scroll',()=>{
-  faders.forEach(el=>{
-    const top=el.getBoundingClientRect().top;
-    if(top<window.innerHeight-100){
-      el.classList.add('visible');
-    }
-  });
+faders.forEach(el=>{
+const top=el.getBoundingClientRect().top;
+if(top<window.innerHeight-100){
+el.classList.add('visible');
+}
+});
 });
 </script>
 
